@@ -25,8 +25,9 @@ def short_key():
     
 while True:
   requests.get(url=f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chatid}&text=开始")
-  long_key()
+  time.sleep(1)
+  #long_key()
   #time.sleep(0.5) #if your heroku account keeps getting banned
-  short_key()
-  requests.get(url=f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chatid}&text=结束")
+  #short_key()
+  #requests.get(url=f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chatid}&text=结束")
     
